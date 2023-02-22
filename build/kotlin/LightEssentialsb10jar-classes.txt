@@ -1,1 +1,0 @@
-D:\workspace\Plugins\LightEssentials\build\classes\kotlin\main\io\github\itsk1mlot\lessentials\Main.class;D:\workspace\Plugins\LightEssentials\build\classes\kotlin\main\io\github\itsk1mlot\lessentials\commands\vanish.class
