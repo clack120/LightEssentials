@@ -20,6 +20,7 @@ class Vanish: CommandExecutor {
       if(vanished.contains(p.uniqueId)) { // 2차 검증 하나요? (/ev on|off와 같은 느낌)
         p.removePotionEffect(PotionEffectType.INVISIBILITY)
         vanished.remove(p.uniqueId)
+        p.sendMessage("§3${p.name}§6님의 투명화 모드가 §c비활성화§6되었습니다!")
       } else {
         p.addPotionEffect(PotionEffect(PotionEffectType.INVISIBILITY, 999999999, 255, true, false, false)) // FIXME: 플레이어가 죽고 리스폰했을때 다시 지급하여야 합니다.
         p.sendMessage("§3${p.name}§6님의 투명화 모드가 §a활성화§6되었습니다!")
