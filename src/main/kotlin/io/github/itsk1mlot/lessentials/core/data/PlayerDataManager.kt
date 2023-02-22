@@ -1,6 +1,6 @@
 package io.github.itsk1mlot.lessentials.core.data
 
-import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.Json // why?
 import java.io.File
 import java.util.UUID
 
