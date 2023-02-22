@@ -4,3 +4,6 @@ version: 1.0.0a
 description: LightEssentials Plugin!
 author: ITSK1MLOT
 website: https://github.com/itsk1mlot/LightEssentials
+commands:
+  - ev:
+    description: You become INVISIBLE!!!
