@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "io.github.itsk1mlot.lessentials"
-version = "1.0.0b"
+version = "1.0.0"
 
 repositories {
   mavenCentral()
