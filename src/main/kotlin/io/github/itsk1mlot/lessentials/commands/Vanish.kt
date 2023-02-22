@@ -17,7 +17,7 @@ class Vanish: CommandExecutor {
         p.sendMessage("§c당신은 그럴 권한이 없습니다.")
         return false
       }
-      if(vanished.contains(p.uniqueId)) {
+      if(vanished.contains(p.uniqueId)) { // 2차 검증 하나요? (/ev on|off와 같은 느낌)
         p.removePotionEffect(PotionEffectType.INVISIBILITY)
         vanished.remove(p.uniqueId)
       } else {
