@@ -8,12 +8,6 @@ import org.bukkit.potion.PotionEffect
 import org.bukkit.potion.PotionEffectType
 import java.util.UUID
 
-/*
-PLEASE SIBAL NO THIS CLASS NAME
-
-SORRY F***
-
- */
 class Vanish: CommandExecutor {
 
     companion object {
@@ -26,8 +20,8 @@ class Vanish: CommandExecutor {
             if(vanished.contains(p.uniqueId)) {
                 // 이미 vanished에 있음 -> 해제
             } else {
-                p.addPotionEffect(PotionEffect(PotionEffectType.INVISIBILITY, 999999999, 255, true, false, false))
-                p.sendMessage("§3${p}§6님의 투명화 모드가 §a활성화§6되었습니다!")
+                p.addPotionEffect(PotionEffect(PotionEffectType.INVISIBILITY, 999999999, 255, true, false, false)) // FIXME: 플레이어가 죽고 리스폰했을때 다시 지급하여야 합니다.
+                p.sendMessage("§3${p.displayName}§6님의 투명화 모드가 §a활성화§6되었습니다!")
             }
         }
         return true
