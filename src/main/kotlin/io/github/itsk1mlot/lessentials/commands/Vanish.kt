@@ -14,10 +14,11 @@ class Vanish: CommandExecutor {
     if(command.name == "ev") {
       val p = sender as Player
       if(!p.isOp) { // TODO/FIXME: Permission or OP?
-        p.sendMessage("당신은 그럴 권한이 없습니다.")
+        p.sendMessage("§c당신은 그럴 권한이 없습니다.")
         return false
       }
       if(vanished.contains(p.uniqueId)) {
+        p.removePotionEffect(PotionEffectType.INVISIBILITY)
         vanished.remove(p.uniqueId)
       } else {
         p.addPotionEffect(PotionEffect(PotionEffectType.INVISIBILITY, 999999999, 255, true, false, false)) // FIXME: 플레이어가 죽고 리스폰했을때 다시 지급하여야 합니다.
